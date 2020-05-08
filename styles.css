@@ -1,0 +1,14 @@
+#board {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.row>.class {
+    float: right;
+    height: 100px;
+    width: 100px;
+}
+
+.row {
+    clear: both
+}
