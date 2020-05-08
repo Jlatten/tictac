@@ -3,12 +3,35 @@
     text-align: center;
 }
 
-.row>.class {
-    float: right;
+.row>div {
+    float: left;
     height: 100px;
     width: 100px;
 }
 
 .row {
-    clear: both
+    margin: auto;
+    height: 100px;
+    clear: both;
+    width: 302px;
+}
+
+.top {
+    border-bottom: 1px solid black;
+}
+
+.center {
+    border-bottom: 1px solid black;
+}
+
+.left {
+    border-right: 1px solid black
+}
+
+.middle {
+    border-right: 1px solid black
+}
+
+.class {
+    cursor: pointer;
 }
