@@ -1,9 +1,15 @@
 let cells = document.querySelectorAll(".row> div");
 
 for (let i = 0; i < cells.length; i++) {
-    if (i % 2 === 0 || i === null) {
-        cells[i].addEventListener("click", clickX);
+
+    for (let j = 0; j <= 8; j++) {
+        if (j % 2 == 1 || j === null) {
+            cells[i].addEventListener("click", clickX);
+        } else {
+            cells[i].addEventListener("click", clickO);
+        }
     }
+
 }
 
 function clickX() {
@@ -14,6 +20,9 @@ function clickO() {
     event.target.textContent = "O";
 }
 
-//if (cells[i] === 'x') {
-//   function clicko() { event.target.textContent = 'o' }
-//}
+/*if (i % 2 == 0 || i === null) {
+       cells[i].addEventListener("click", clickX);
+   }
+   else {
+          cells[i].addEventListener("click", clickO);
+      }*/
