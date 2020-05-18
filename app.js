@@ -1,18 +1,17 @@
-let cells = document.querySelectorAll('.row> div');
+let cells = document.querySelectorAll(".row> div");
 
 for (let i = 0; i < cells.length; i++) {
-
-    if (cells[i].textContent === null) {
-        cells[i].addEventListener('click', ClickX);
+    if (i % 2 === 0 || i === null) {
+        cells[i].addEventListener("click", clickX);
     }
 }
 
-function ClickX() {
-    event.target.textContent = 'X'
+function clickX() {
+    event.target.textContent = "X";
 }
 
-function ClickO() {
-    event.target.textContent = 'O'
+function clickO() {
+    event.target.textContent = "O";
 }
 
 //if (cells[i] === 'x') {
