@@ -2,7 +2,7 @@ let cells = document.querySelectorAll('.row> div');
 
 for (let i = 0; i < cells.length; i++) {
 
-    if (cells[i] === null) {
+    if (cells[i].textContent === null) {
         cells[i].addEventListener('click', ClickX);
     }
 }
